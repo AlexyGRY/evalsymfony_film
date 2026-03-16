@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block title %}Détails du film{% endblock %}
+
+{% block body %}
+    <h1>{{ film.title }}</h1>
+    <img src="{{film.affiche}}" alt="Affiche du film">
+    <p>{{ film.description }}</p>
+    <p>Date de sortie : {{ film.sortie }}</p>
+    <p>Genre : {{ film.genre }}</p>
+{% endblock %}
